@@ -1,0 +1,5 @@
+[tools]
+node = "latest"
+bun = "latest"
+java = "latest"
+maven = "latest"
