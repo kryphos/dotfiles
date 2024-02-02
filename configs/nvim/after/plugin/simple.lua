@@ -32,7 +32,9 @@ require("neodev").setup()
 
 require("todo-comments").setup()
 
-require("trouble").setup()
+require("trouble").setup({
+    padding = false,
+})
 
 require("overlength").setup({
     default_overlength = 100,
@@ -51,3 +53,5 @@ require("pqf").setup()
 require("numb").setup()
 
 require("colorizer").setup()
+
+require("symbols-outline").setup()

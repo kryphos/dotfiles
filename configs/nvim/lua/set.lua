@@ -22,6 +22,7 @@ vim.opt.cmdheight = 0
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.laststatus = 3
+vim.opt.splitkeep = "screen"
 
 vim.o.shell = "zsh"
 vim.o.timeout = true
