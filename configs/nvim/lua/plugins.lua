@@ -98,6 +98,12 @@ return require("packer").startup(function(use)
         }
     }
 
+    -- neoorg
+    use {
+        "nvim-neorg/neorg",
+        run = ":Neorg sync-parsers",
+    }
+
     -- Rust cargo file
     use {
         "saecki/crates.nvim",
