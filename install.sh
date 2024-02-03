@@ -100,10 +100,6 @@ wget "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/af645f597c
 # let spicetify-cli change files
 sudo chmod 777 /opt/spotify
 sudo chmod 777 /opt/spotify/Apps -R
-/bin/spotify
-sleep 2
-/bin/spicetify config current_theme Sleek
-/bin/spicetify config color_scheme UltraBlack
-/bin/spicetify backup apply
-
-lxappearance
+#/bin/spicetify config current_theme Sleek
+#/bin/spicetify config color_scheme UltraBlack
+#/bin/spicetify backup apply
