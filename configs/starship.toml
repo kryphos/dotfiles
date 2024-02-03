@@ -10,7 +10,7 @@ error_symbol = '[λ](bold red)'
 
 [sudo]
 style = 'bold green'
-symbol = 'su'
+symbol = 'su '
 disabled = false
 
 [git_metrics]
