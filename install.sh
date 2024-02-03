@@ -8,8 +8,8 @@ if [ $choice != 1 ] && [ $choice != 2 ]; then
 fi
 
 # update system
-pacman-key --init
-pacman-key --populate archlinux
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
 sudo pacman -Syyu --noconfirm
 
 # install aur helper
@@ -21,32 +21,33 @@ sudo pacman -S --needed --noconfirm git base-devel && \
     rm -rf yay/
 
 # install software
-sudo pacman -S --noconfirm man-db man-pages btop neovim discord firefox neovide picom \
+sudo pacman -S man-db man-pages btop neovim discord firefox neovide picom mold krita \
   sane cups system-config-printer python-pillow thunderbird okular flameshot peek kitty \
   tmux ripgrep ranger audacity obs-studio xournalpp gparted vlc feh gdb clang docker \
   docker-compose cloc make cmake fd tldr python-pip python-reportlab tar zip unzip \
   ttf-fira-code zsh nemo powerline-fonts font-manager texlive xclip blender inkscape \
-  krita wine mold
+  wine
 yay -S update-grub etcher-bin spotify onlyoffice-bin headsetcontrol opentabletdriver \
   spicetify-cli spicetify-themes-git noto-fonts-emoji oh-my-zsh-git act pfetch \
   lxappearance-gtk3 gtk-theme-material-black pavucontrol betterdiscord-installer \
-  codelldb sfxr-qt-bin terminus-font-ttf boomer-git lazydocker ani-cli-git lazygit blockbench-bin
+  codelldb sfxr-qt-bin terminus-font-ttf boomer-git lazydocker ani-cli-git lazygit \
+  blockbench-bin
 
 # install separate pc/notebook software
 if [ $choice == 1 ]; then
-  sudo pacman -S --noconfirm lib32-nvidia-utils steam lutris
+  sudo pacman -S lib32-nvidia-utils steam lutris
   yay -S minecraft-launcher path-of-building-community-git
 else
-  sudo pacman -S --noconfirm xf86-input-synaptics
+  sudo pacman -S xf86-input-synaptics
 fi
 
 # rust
 sudo pacman -R rust --noconfirm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ~/.cargo/bin/rustup default nightly
-~/.cargo/bin/cargo install cargo-binstall rtx-cli
-~/.cargo/bin/cargo binstall exa bat irust bacon du-dust cargo-watch evcxr_repl starship cargo-info \
-  cargo-expand cargo-make cross systemfd -y
+~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon
+~/.cargo/bin/cargo binstall exa bat irust du-dust cargo-watch evcxr_repl starship cargo-info \
+  cargo-expand cargo-make cross systemfd sqlx-cli -y
 
 # cleanup
 sudo pacman -R nodejs yarn node-gyp semver npm nodejs-nopt --noconfirm

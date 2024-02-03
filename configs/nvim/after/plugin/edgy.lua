@@ -34,13 +34,13 @@ require("edgy").setup({
             title = "Git",
             ft = "fugitive",
             open = "G",
-            size = { height = 0.25 },
+            size = { height = 0.25, width = 0.20 },
         },
         {
             title = "Symbols",
             ft = "Outline",
             open = "SymbolsOutlineOpen",
-            size = { height = 0.25 },
+            size = { height = 0.25, width = 0.20 },
         },
     },
     right = {

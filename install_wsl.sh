@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # update system
-pacman-key --init
-pacman-key --populate archlinux
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
 sudo pacman -Syyu --noconfirm
 
 # install aur helper
@@ -14,7 +14,7 @@ sudo pacman -S --needed --noconfirm git base-devel && \
     rm -rf yay/
 
 # install software
-sudo pacman -S --noconfirm man-db man-pages btop neovim tmux ripgrep ranger gdb clang docker \
+sudo pacman -S noconfirm man-db man-pages btop neovim tmux ripgrep ranger gdb clang docker \
   docker-compose cloc make cmake fd tldr python-pip tar zip unzip zsh xclip mold
 yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit
 
@@ -22,9 +22,9 @@ yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit
 sudo pacman -R rust --noconfirm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ~/.cargo/bin/rustup default nightly
-~/.cargo/bin/cargo install cargo-binstall rtx-cli
-~/.cargo/bin/cargo binstall exa bat irust bacon du-dust cargo-watch evcxr_repl starship cargo-info \
-  cargo-expand cargo-make cross systemfd -y
+~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon
+~/.cargo/bin/cargo binstall exa bat irust du-dust cargo-watch evcxr_repl starship cargo-info \
+  cargo-expand cargo-make cross systemfd sqlx-cli -y
 
 # cleanup
 sudo pacman -R nodejs yarn node-gyp semver npm nodejs-nopt --noconfirm
