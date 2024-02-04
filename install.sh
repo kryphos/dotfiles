@@ -29,16 +29,13 @@ sudo pacman -S man-db man-pages btop neovim discord firefox neovide picom mold k
   tmux ripgrep ranger audacity obs-studio xournalpp gparted vlc feh gdb clang docker \
   docker-compose cloc make cmake fd tldr python-pip python-reportlab tar zip unzip \
   zsh nemo font-manager texlive xclip blender inkscape ipython raylib lib32-nvidia-utils \
-  wine nmap wireshark-qt aircrack-ng hydra john hashcat ntfs-3g
+  wine nmap wireshark-qt aircrack-ng hydra john hashcat ntfs-3g ttf-hanazono ttf-caladea \
+  ttf-opensans noto-fonts-extra ttf-nerd-fonts-symbols ttf-fira-code powerline-fonts
 yay -S update-grub etcher-bin spotify onlyoffice-bin headsetcontrol opentabletdriver \
   spicetify-cli spicetify-themes-git oh-my-zsh-git act blockbench-bin metasplit-git pfetch \
   lxappearance-gtk3 gtk-theme-material-black pavucontrol betterdiscord-installer lazygit \
-  codelldb sfxr-qt-bin boomer-git lazydocker ani-cli-git
-
-# install fonts
-sudo pacman -S ttf-hanazono ttf-caladea ttf-opensans noto-fonts-extra ttf-nerd-fonts-symbols \
-  ttf-fira-code powerline-fonts
-yay -S ttf-ms-fonts terminus-font-ttf noto-fonts noto-fonts-emoji
+  codelldb sfxr-qt-bin boomer-git lazydocker ani-cli-git ttf-ms-fonts terminus-font-ttf \
+  noto-fonts noto-fonts-emoji
 
 # install separate pc/notebook software
 if [ $choice == 1 ]; then
