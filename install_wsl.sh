@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# directly use new pacman confs
+sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
+
 # update system
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
@@ -15,7 +18,7 @@ sudo pacman -S --needed --noconfirm git base-devel && \
 
 # install software
 sudo pacman -S noconfirm man-db man-pages btop neovim tmux ripgrep ranger gdb clang docker \
-  docker-compose cloc make cmake fd tldr python-pip tar zip unzip zsh xclip mold nmap
+  docker-compose cloc make cmake fd tldr python-pip tar zip unzip zsh xclip mold ipython
 yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit
 
 # rust
@@ -28,7 +31,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # cleanup
 sudo pacman -R nodejs yarn node-gyp semver npm nodejs-nopt --noconfirm
-~/.cargo/bin/rtx use node@latest bun@latest java@latest maven@latest -y
+~/.cargo/bin/rtx install node@latest bun@latest java@latest maven@latest python@latest -y
 
 # git config
 git config --global credential.helper store
@@ -43,4 +46,4 @@ ln -sf $(pwd)/configs/zshrc ~/.zshrc
 ln -sf $(pwd)/configs/nvim ~/.config/
 ln -sf $(pwd)/configs/starship.toml ~/.config/
 ln -sf $(pwd)/configs/tmux.conf ~/.config/tmux/tmux.conf
-sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
+ln -sf $(pwd)/configs/rtx.toml ~/.rtx.toml

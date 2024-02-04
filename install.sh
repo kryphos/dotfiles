@@ -7,6 +7,9 @@ if [ $choice != 1 ] && [ $choice != 2 ]; then
   exit 1
 fi
 
+# directly use new pacman confs
+sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
+
 # update system
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
@@ -25,17 +28,21 @@ sudo pacman -S man-db man-pages btop neovim discord firefox neovide picom mold k
   sane cups system-config-printer python-pillow thunderbird okular flameshot peek kitty \
   tmux ripgrep ranger audacity obs-studio xournalpp gparted vlc feh gdb clang docker \
   docker-compose cloc make cmake fd tldr python-pip python-reportlab tar zip unzip \
-  ttf-fira-code zsh nemo powerline-fonts font-manager texlive xclip blender inkscape \
-  wine nmap wireshark-qt aircrack-ng hydra john hashcat
+  zsh nemo font-manager texlive xclip blender inkscape ipython raylib lib32-nvidia-utils \
+  wine nmap wireshark-qt aircrack-ng hydra john hashcat ntfs-3g
 yay -S update-grub etcher-bin spotify onlyoffice-bin headsetcontrol opentabletdriver \
-  spicetify-cli spicetify-themes-git noto-fonts-emoji oh-my-zsh-git act pfetch \
-  lxappearance-gtk3 gtk-theme-material-black pavucontrol betterdiscord-installer \
-  codelldb sfxr-qt-bin terminus-font-ttf boomer-git lazydocker ani-cli-git lazygit \
-  blockbench-bin metasplit-git
+  spicetify-cli spicetify-themes-git oh-my-zsh-git act blockbench-bin metasplit-git pfetch \
+  lxappearance-gtk3 gtk-theme-material-black pavucontrol betterdiscord-installer lazygit \
+  codelldb sfxr-qt-bin boomer-git lazydocker ani-cli-git
+
+# install fonts
+sudo pacman -S ttf-hanazono ttf-caladea ttf-opensans noto-fonts-extra ttf-nerd-fonts-symbols \
+  ttf-fira-code powerline-fonts
+yay -S ttf-ms-fonts terminus-font-ttf noto-fonts noto-fonts-emoji
 
 # install separate pc/notebook software
 if [ $choice == 1 ]; then
-  sudo pacman -S lib32-nvidia-utils steam lutris
+  sudo pacman -S steam lutris
   yay -S minecraft-launcher path-of-building-community-git
 else
   sudo pacman -S xf86-input-synaptics
@@ -51,7 +58,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # cleanup
 sudo pacman -R nodejs yarn node-gyp semver npm nodejs-nopt --noconfirm
-~/.cargo/bin/rtx use node@latest bun@latest java@latest maven@latest -y
+~/.cargo/bin/rtx install node@latest bun@latest java@latest maven@latest python@latest -y
 
 # git config
 git config --global credential.helper store
@@ -83,8 +90,8 @@ ln -sf $(pwd)/configs/picom.conf ~/.config/picom/
 ln -sf $(pwd)/configs/tmux.conf ~/.config/tmux/tmux.conf
 ln -sf $(pwd)/configs/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf $(pwd)/configs/discord_settings.json ~/.config/discord/settings.json
+ln -sf $(pwd)/configs/rtx.toml ~/.rtx.toml
 sudo ln -sf $(pwd)/configs/blacklist.conf /etc/modprobe.d/blacklist.conf
-sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
 
 if [ $choice == 1 ]; then
     ln -sf $(pwd)/configs/i3status ~/.config/i3status/config
