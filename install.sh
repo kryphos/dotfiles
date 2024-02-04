@@ -26,12 +26,12 @@ sudo pacman -S man-db man-pages btop neovim discord firefox neovide picom mold k
   tmux ripgrep ranger audacity obs-studio xournalpp gparted vlc feh gdb clang docker \
   docker-compose cloc make cmake fd tldr python-pip python-reportlab tar zip unzip \
   ttf-fira-code zsh nemo powerline-fonts font-manager texlive xclip blender inkscape \
-  wine
+  wine nmap wireshark-qt aircrack-ng hydra john hashcat
 yay -S update-grub etcher-bin spotify onlyoffice-bin headsetcontrol opentabletdriver \
   spicetify-cli spicetify-themes-git noto-fonts-emoji oh-my-zsh-git act pfetch \
   lxappearance-gtk3 gtk-theme-material-black pavucontrol betterdiscord-installer \
   codelldb sfxr-qt-bin terminus-font-ttf boomer-git lazydocker ani-cli-git lazygit \
-  blockbench-bin
+  blockbench-bin metasplit-git
 
 # install separate pc/notebook software
 if [ $choice == 1 ]; then

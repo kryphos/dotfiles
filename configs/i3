@@ -32,8 +32,8 @@ bindsym $mod+n exec neovide
 
 # autostart commands
 exec picom
-exec feh --bg-fill ~/code/dotfiles/files/wp.jpg
-exec xrandr --output HDMI-0 --right-of DP-0
+exec feh --bg-fill ~/.dotfiles/files/wp.jpg
+exec xrandr --output HDMI-0 --left-of DP-0
 exec xrandr --output HDMI-0 --gamma 0.8
 exec xrandr --output DP-0 --gamma 0.8
 
