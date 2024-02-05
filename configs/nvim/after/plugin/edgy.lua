@@ -3,7 +3,7 @@ require("edgy").setup({
         {
             title = "Commit",
             ft = "gitcommit",
-            size = { height = 0.2 },
+            size = { height = 0.5 },
         },
     },
     bottom = {
@@ -11,7 +11,7 @@ require("edgy").setup({
             title = "Trouble",
             ft = "Trouble",
             open = "TroubleToggle",
-            size = { height = 0.2 },
+            size = { height = 0.05 },
         },
         -- BUG: enabling this will crash nvim with a division by zero error on opening qf and trouble
         --{
@@ -28,19 +28,19 @@ require("edgy").setup({
             filter = function(buf)
                 return vim.b[buf].neo_tree_source == "filesystem"
             end,
-            size = { height = 0.5, width = 0.20 },
+            size = { height = 0.5, width = 0.13 },
         },
         {
             title = "Git",
             ft = "fugitive",
             open = "G",
-            size = { height = 0.25, width = 0.20 },
+            size = { height = 0.25, width = 0.13 },
         },
         {
             title = "Symbols",
             ft = "Outline",
             open = "SymbolsOutlineOpen",
-            size = { height = 0.25, width = 0.20 },
+            size = { height = 0.25, width = 0.13 },
         },
     },
     right = {
@@ -48,7 +48,7 @@ require("edgy").setup({
             title = "Spectre",
             ft = "spectre_panel",
             open = "SpectreOpen",
-            size = { width = 0.35 },
+            size = { width = 0.40 },
         },
     },
     animate = {
@@ -61,5 +61,19 @@ require("edgy").setup({
         winfixheight = false,
         spell = false,
         signcolumn = "no",
+    },
+    keys = {
+        ["<c-l>"] = function(win)
+            win:resize("width", 2)
+        end,
+        ["<c-h>"] = function(win)
+            win:resize("width", -2)
+        end,
+        ["<c-j>"] = function(win)
+            win:resize("height", 2)
+        end,
+        ["<c-k>"] = function(win)
+            win:resize("height", -2)
+        end,
     },
 })
