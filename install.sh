@@ -49,7 +49,7 @@ fi
 sudo pacman -R rust --noconfirm
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ~/.cargo/bin/rustup default nightly
-~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon
+~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon zoxide
 ~/.cargo/bin/cargo binstall exa bat irust du-dust cargo-watch evcxr_repl starship cargo-info \
   cargo-expand cargo-make cross systemfd sqlx-cli -y
 
