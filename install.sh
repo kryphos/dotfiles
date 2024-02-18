@@ -89,6 +89,7 @@ ln -sf $(pwd)/configs/kitty.conf ~/.config/kitty/kitty.conf
 ln -sf $(pwd)/configs/discord_settings.json ~/.config/discord/settings.json
 ln -sf $(pwd)/configs/rtx.toml ~/.rtx.toml
 sudo ln -sf $(pwd)/configs/blacklist.conf /etc/modprobe.d/blacklist.conf
+sudo ln -sf $(pwd)/files/windows /usr/bin/windows
 
 if [ $choice == 1 ]; then
     ln -sf $(pwd)/configs/i3status ~/.config/i3status/config
