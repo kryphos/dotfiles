@@ -30,7 +30,8 @@ sudo pacman -S man-db man-pages btop neovim discord firefox neovide picom mold k
   docker-compose cloc make cmake fd tldr python-pip python-reportlab tar zip unzip \
   zsh nemo font-manager texlive xclip blender inkscape ipython raylib lib32-nvidia-utils \
   wine nmap wireshark-qt aircrack-ng hydra john hashcat ntfs-3g ttf-hanazono ttf-caladea \
-  ttf-opensans noto-fonts-extra ttf-nerd-fonts-symbols ttf-fira-code powerline-fonts zenmap
+  ttf-opensans noto-fonts-extra ttf-nerd-fonts-symbols ttf-fira-code powerline-fonts zenmap \
+  thefuck
 yay -S update-grub etcher-bin spotify onlyoffice-bin headsetcontrol opentabletdriver \
   spicetify-cli spicetify-themes-git oh-my-zsh-git act blockbench-bin metasplit-git pfetch \
   lxappearance-gtk3 gtk-theme-material-black pavucontrol betterdiscord-installer lazygit \

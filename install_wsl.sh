@@ -18,7 +18,7 @@ sudo pacman -S --needed --noconfirm git base-devel && \
 
 # install software
 sudo pacman -S noconfirm man-db man-pages btop neovim tmux ripgrep ranger gdb clang docker \
-  docker-compose cloc make cmake fd tldr python-pip tar zip unzip zsh xclip mold ipython
+  docker-compose cloc make cmake fd tldr python-pip tar zip unzip zsh xclip mold ipython thefuck
 yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit
 
 # rust
