@@ -9,7 +9,7 @@ require("crates").setup()
 require("dressing").setup()
 
 require("early-retirement").setup({
-    retirementAgeMins = 5,
+    retirementAgeMins = 3,
 })
 
 require("fidget").setup()
@@ -55,3 +55,13 @@ require("numb").setup()
 require("colorizer").setup()
 
 require("symbols-outline").setup()
+
+require("mini.ai").setup()
+
+require("mini.surround").setup({
+    mappings = {
+        add = "ea",
+        delete = "ed",
+        replace = "er",
+    }
+})

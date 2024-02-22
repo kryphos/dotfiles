@@ -116,6 +116,7 @@ return require("packer").startup(function(use)
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 
     -- Misc
+    use { "echasnovski/mini.nvim" }
     use { "stevearc/dressing.nvim" }
     use { "mrjones2014/smart-splits.nvim" }
     use { "sindrets/winshift.nvim" }
