@@ -8,6 +8,9 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 source $ZSH/oh-my-zsh.sh
 
+path+=("/home/luca/.cargo/bin")
+export PATH
+
 export EDITOR=vim
 export SHELL=zsh
 
