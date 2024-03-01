@@ -4,6 +4,8 @@ mkdir -p ~/.config/BetterDiscord/plugins
 mkdir -p ~/.config/tmux
 mkdir -p ~/.config/discord
 
+rm -rf ~/.config/hypr
+
 ln -sf $(pwd)/configs/hypr ~/.config/
 ln -sf $(pwd)/configs/nvim ~/.config/
 ln -sf $(pwd)/configs/terminal/zshrc ~/.zshrc
