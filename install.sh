@@ -17,7 +17,7 @@ DEV="
     texlive
     neovim neovide
     kitty zsh tmux
-    ipython python-pip jupytherlab
+    ipython python-pip jupyterlab
     docker docker-compose
 "
 
@@ -34,12 +34,13 @@ UTILS="
     gparted
     polkit-kde-agent
     pipewire wireplumber
-    hyprpaper hyprpicker hyprlock bemenu
+    hyprpaper bemenu
 "
 
 UTILS_AUR="
     update-grub etcher-bin ani-cli-git
     headsetcontrol opentabletdriver
+    hyprpicker hyprlock
 "
 
 PRINTER="
@@ -55,11 +56,11 @@ GAMING_AUR="
 "
 
 PTESTING="
-    nmap zenmap wireshark-qt aircrack-ng hydra john hashcat
+    nmap wireshark-qt aircrack-ng hydra john hashcat
 "
 
 PTESTING_AUR="
-    metasploit-git
+    metasploit-git zenmap
 "
 
 CARGO_PKGS="
