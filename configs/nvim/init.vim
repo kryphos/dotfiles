@@ -1,5 +1,5 @@
 lua require("plugins")
-lua require("magnus")
+lua require("keymap")
 lua require("set")
 
 " Copilot suggestion color

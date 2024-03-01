@@ -24,7 +24,7 @@ yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit
 
 # rust
 rustup default nightly
-~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon zoxide
+~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon zoxide -j 8
 ~/.cargo/bin/cargo binstall exa bat irust du-dust cargo-watch evcxr_repl starship cargo-info \
   cargo-expand cargo-make cross systemfd sqlx-cli -y
 

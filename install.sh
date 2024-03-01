@@ -111,10 +111,10 @@ sudo pacman -S $FONTS $DEV $UTILS $PRINTER $GAMING $PTESTING $SOFTWARE
 yay -S $FONTS_AUR $DEV_AUR $UTILS_AUR $GAMING_AUR $PTESTING_AUR $SOFTWARE_AUR
 
 rustup default nightly
-cargo install $CARGO_PKGS
+cargo install $CARGO_PKGS -j 8
 cargo binstall $CARGO_BIN_PKGS -y
 
-sudo pacman -R nodejs yarn node-gyp semver npm nodejs-nopt --noconfirm
+sudo pacman -R yarn --noconfirm
 ~/.cargo/bin/rtx install $RTX_LANGS -y
 
 wget "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/af645f597c7e4da51a467d27f56f305edea6cb5e/Plugins/PluginRepo/PluginRepo.plugin.js" -O ~/.config/BetterDiscord/plugins/PluginRepo.plugin.js
