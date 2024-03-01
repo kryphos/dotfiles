@@ -1,4 +1,4 @@
-vim.keymap.set("i", "<M-Tab>", "copilot#Accept('<CR>')", {
+vim.magnus.set("i", "<C-Y>", "copilot#Accept('<CR>')", {
     expr = true,
     replace_keycodes = false
 })

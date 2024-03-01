@@ -54,8 +54,6 @@ require("numb").setup()
 
 require("colorizer").setup()
 
-require("symbols-outline").setup()
-
 require("mini.ai").setup()
 
 require("mini.surround").setup({
@@ -65,3 +63,5 @@ require("mini.surround").setup({
         replace = "er",
     }
 })
+
+require("ts-error-translator").setup()

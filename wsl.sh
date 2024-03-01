@@ -17,21 +17,20 @@ sudo pacman -S --needed --noconfirm git base-devel && \
     rm -rf yay/
 
 # install software
-sudo pacman -S noconfirm man-db man-pages btop neovim tmux ripgrep ranger gdb clang docker \
-  docker-compose cloc make cmake fd tldr python-pip tar zip unzip zsh xclip mold ipython thefuck
+sudo pacman -S --noconfirm man-db man-pages tldr neovim tmux ripgrep gdb clang docker \
+  docker-compose cloc make cmake ninja fd python-pip tar zip unzip zsh mold ipython thefuck \
+  jq rustup
 yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit
 
 # rust
-sudo pacman -R rust --noconfirm
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-~/.cargo/bin/rustup default nightly
+rustup default nightly
 ~/.cargo/bin/cargo install cargo-binstall rtx-cli bacon zoxide
 ~/.cargo/bin/cargo binstall exa bat irust du-dust cargo-watch evcxr_repl starship cargo-info \
   cargo-expand cargo-make cross systemfd sqlx-cli -y
 
 # cleanup
 sudo pacman -R nodejs yarn node-gyp semver npm nodejs-nopt --noconfirm
-~/.cargo/bin/rtx install node@latest bun@latest java@latest maven@latest python@latest -y
+~/.cargo/bin/rtx install node@latest bun@latest java@latest maven@latest python@latest go@latest -y
 
 # git config
 git config --global credential.helper store

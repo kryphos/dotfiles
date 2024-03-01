@@ -19,9 +19,6 @@ vim.keymap.set("n", "<C-s>", ":w<CR>")
 -- esc for leaving insert mode in terminal
 vim.keymap.set("t", "<esc>", [[<C-\><C-n>]])
 
--- close everything on :Q
-vim.cmd([[command! Q :wqa!]])
-
 -- make jump commands also center the screen
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -54,7 +51,6 @@ vim.keymap.set("n", "<leader>w", ":WinShift<CR>")
 -- popouts
 vim.keymap.set("n", "<leader>e", ":Neotree toggle left<CR>")
 vim.keymap.set("n", "<leader>g", ":G<CR>")
-vim.keymap.set("n", "<leader>o", ":SymbolsOutline<CR>")
 vim.keymap.set("n", "<leader>s", "<cmd>lua require('spectre').toggle()<CR>", {})
 vim.keymap.set("n", "<leader>sw", "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", {})
 vim.keymap.set("n", "<leader>t", ":TroubleToggle workspace_diagnostics<CR>")

@@ -34,7 +34,6 @@ return require("packer").startup(function(use)
     use { "nvim-tree/nvim-web-devicons" }
 
     -- Ui tools
-    use { "folke/edgy.nvim" }
     use { "nvim-lualine/lualine.nvim" }
     use { "alvarosevilla95/luatab.nvim" }
     use {
@@ -47,7 +46,6 @@ return require("packer").startup(function(use)
     use { "ziontee113/icon-picker.nvim" }
     use { "tomiis4/Hypersonic.nvim" }
     use { "j-hui/fidget.nvim", branch = "legacy" }
-    use { "simrat39/symbols-outline.nvim" }
 
     -- Git
     use { "tpope/vim-fugitive" }
@@ -142,4 +140,5 @@ return require("packer").startup(function(use)
     use { "ivanjermakov/troublesum.nvim" }
     use { "junegunn/vim-easy-align" }
     use { "NvChad/nvim-colorizer.lua" }
+    use { "dmmulroy/ts-error-translator.nvim" }
 end)
