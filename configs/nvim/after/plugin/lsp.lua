@@ -59,7 +59,7 @@ require("lspconfig").clangd.setup {
 -- auto install frequent language servers
 require("mason-lspconfig").setup {
     ensure_installed = {
-        "lua_ls", "rust_analyzer", "angularls", "clangd", "cssls", "cssmodules_ls",
+        "lua_ls", "rust_analyzer", "angularls", "clangd", "css-lsp", "cssmodules_ls",
         "docker_compose_language_service", "dockerls", "emmet_language_server", "eslint", "html",
         "jdtls", "jsonls", "pylsp", "sqlls", "tailwindcss", "texlab", "tsserver", "vimls", "yamlls",
         "typos_lsp", "bashls"

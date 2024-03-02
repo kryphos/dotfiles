@@ -24,23 +24,24 @@ DEV="
 DEV_AUR="
     pfetch
     oh-my-zsh-git
-    codelldb
+    codelldb-bin
     act
-    lazygit lazydocker
+    lazygit lazydocker-bin
 "
 
 UTILS="
-    btop feh fd tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv
+    btop feh fd tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv wl-clipboard
     gparted
     polkit-kde-agent
     pipewire wireplumber
-    hyprpaper bemenu
+    hyprpaper bemenu copyq
 "
 
 UTILS_AUR="
     update-grub etcher-bin ani-cli-git
     headsetcontrol opentabletdriver
     hyprpicker hyprlock
+    xwaylandvideobridge-git
 "
 
 PRINTER="
@@ -48,7 +49,7 @@ PRINTER="
 "
 
 GAMING="
-    steam lutris wine
+    steam lutris wine gamescope
 "
 
 GAMING_AUR="
