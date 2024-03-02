@@ -24,7 +24,7 @@ DEV="
 DEV_AUR="
     pfetch
     oh-my-zsh-git
-    codelldb-bin
+    gf2-git codelldb-bin
     act
     lazygit lazydocker-bin
 "
