@@ -25,10 +25,9 @@ alias rm="rm -v"
 alias mkdir="mkdir -pv"
 alias pacman="sudo pacman"
 
-alias neovide="env -u WAYLAND_DISPLAY neovide"
-
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(rtx activate zsh)"
 eval "$(thefuck --alias)"
+
 pfetch
