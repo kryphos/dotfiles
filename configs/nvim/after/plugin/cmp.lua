@@ -3,7 +3,7 @@ cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-e>"] = cmp.mapping.abort(),
-        ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+        ["<CR>"] = cmp.mapping.confirm({ select = true }),
     }),
 })
 
