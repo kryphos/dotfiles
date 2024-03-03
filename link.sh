@@ -18,4 +18,4 @@ ln -sf $(pwd)/configs/discord_settings.json ~/.config/discord/settings.json
 sudo ln -sf $(pwd)/configs/grub /etc/default/grub
 sudo ln -sf $(pwd)/configs/blacklist.conf /etc/modprobe.d/blacklist.conf
 sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
-sudo ln -sf $(pwd)/files/windows /usr/bin/windows
+sudo ln -sf $(pwd)/binaries/windows /usr/bin/windows
