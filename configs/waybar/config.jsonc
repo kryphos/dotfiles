@@ -1,0 +1,43 @@
+[
+    {
+        "output": "DP-2",
+        "layer": "top",
+        "position": "bottom",
+        "height": 30,
+        "spacing": 18,
+        "modules-left": [
+            "hyprland/workspaces",
+            "hyprland/submap"
+        ],
+        "modules-center": [],
+        "modules-right": [
+            "cpu",
+            "temperature",
+            "memory",
+            "battery",
+            "pulseaudio",
+            "clock"
+        ],
+        "include": [
+            "~/.config/waybar/modules.jsonc"
+        ]
+    },
+    {
+        "output": "HDMI-A-1",
+        "layer": "top",
+        "position": "bottom",
+        "height": 30,
+        "spacing": 18,
+        "modules-left": [
+            "hyprland/workspaces",
+            "hyprland/submap"
+        ],
+        "modules-center": [],
+        "modules-right": [
+            "tray"
+        ],
+        "include": [
+            "~/.config/waybar/modules.jsonc"
+        ]
+    }
+]

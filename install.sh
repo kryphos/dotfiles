@@ -30,18 +30,20 @@ DEV_AUR="
 "
 
 UTILS="
-    btop feh fd tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv wl-clipboard
+    btop feh fd tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv
     gparted
     polkit-kde-agent
+    xdg-desktop-portal-gtk
     pipewire wireplumber
-    hyprpaper bemenu copyq
+    waybar hyprpaper bemenu
+    copyq wl-clipboard
+    grim slurp
 "
 
 UTILS_AUR="
     update-grub etcher-bin ani-cli-git
     headsetcontrol opentabletdriver
     hyprpicker hyprlock
-    xwaylandvideobridge-git
 "
 
 PRINTER="
@@ -49,7 +51,7 @@ PRINTER="
 "
 
 GAMING="
-    steam lutris wine gamescope
+    steam lutris wine gamescope mangohud
 "
 
 GAMING_AUR="
