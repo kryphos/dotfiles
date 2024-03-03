@@ -30,8 +30,8 @@ DEV_AUR="
 "
 
 UTILS="
-    btop feh fd tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv
-    gparted
+    btop feh fd tk tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv
+    gparted nemo
     polkit-kde-agent
     xdg-desktop-portal-gtk
     pipewire wireplumber
@@ -43,7 +43,7 @@ UTILS="
 UTILS_AUR="
     update-grub etcher-bin ani-cli-git
     headsetcontrol opentabletdriver
-    hyprpicker hyprlock
+    hyprpicker hyprlock wlogout
 "
 
 PRINTER="
@@ -117,7 +117,7 @@ rustup default nightly
 cargo install $CARGO_PKGS -j 8
 cargo binstall $CARGO_BIN_PKGS -y
 
-sudo pacman -R yarn --noconfirm
+sudo pacman -R yarn dunst --noconfirm
 ~/.cargo/bin/rtx install $RTX_LANGS -y
 
 wget "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/af645f597c7e4da51a467d27f56f305edea6cb5e/Plugins/PluginRepo/PluginRepo.plugin.js" -O ~/.config/BetterDiscord/plugins/PluginRepo.plugin.js

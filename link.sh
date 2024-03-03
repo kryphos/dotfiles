@@ -9,6 +9,7 @@ rm -rf ~/.config/hypr
 ln -sf $(pwd)/configs/hypr ~/.config/
 ln -sf $(pwd)/configs/nvim ~/.config/
 ln -sf $(pwd)/configs/waybar ~/.config/
+ln -sf $(pwd)/configs/wlogout ~/.config/
 ln -sf $(pwd)/configs/terminal/zshrc ~/.zshrc
 ln -sf $(pwd)/configs/terminal/starship.toml ~/.config/
 ln -sf $(pwd)/configs/terminal/tmux.conf ~/.config/tmux/tmux.conf

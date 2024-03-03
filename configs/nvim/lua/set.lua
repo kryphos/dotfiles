@@ -30,8 +30,8 @@ vim.o.timeoutlen = 400
 
 vim.o.guifont = "Terminus (TTF):h22"
 vim.g.neovide_cursor_trail_size = 0
-vim.g.neovide_scale_factor = 0.85
+vim.g.neovide_scale_factor = 0.75
 vim.g.neovide_hide_mouse_when_typing = true
-vim.g.neovide_transparency = 0.95
+vim.g.neovide_transparency = 0.90
 
-vim.cmd("colorscheme midnight")
+vim.cmd("colorscheme ayu")

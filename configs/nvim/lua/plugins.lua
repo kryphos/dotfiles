@@ -14,6 +14,8 @@ return require("packer").startup(function(use)
     use { "wbthomason/packer.nvim" }
 
     -- Themes
+    use { "goolord/alpha-nvim" }
+    use { "xiyaowong/transparent.nvim" }
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "nyoom-engineering/oxocarbon.nvim" }
     use { "stankovictab/mgz.nvim" }
