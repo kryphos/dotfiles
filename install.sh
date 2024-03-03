@@ -87,7 +87,7 @@ SOFTWARE="
 
 SOFTWARE_AUR="
     spotify spicetify-cli spicetify-themes-git
-    betterdiscord-installer
+    betterdiscord-installer webcord
     onlyoffice-bin blockbench-bin
     sfxr-qt-bin pavucontrol
 "
