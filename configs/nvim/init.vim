@@ -5,6 +5,9 @@ lua require("set")
 " Copilot suggestion color
 highlight CopilotSuggestion guifg=#910367 ctermfg=8
 
+" window sep styling
+hi VertSplit guibg=NONE guifg=#141414
+
 " Show whitespace
 set list listchars=tab:>\ ,trail:-,eol:↲
 

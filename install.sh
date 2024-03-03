@@ -44,6 +44,7 @@ UTILS_AUR="
     update-grub etcher-bin ani-cli-git
     headsetcontrol opentabletdriver
     hyprpicker hyprlock wlogout
+    kripton-theme-git
 "
 
 PRINTER="
