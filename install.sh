@@ -38,6 +38,7 @@ UTILS="
     waybar hyprpaper bemenu
     copyq wl-clipboard
     grim slurp
+    nwg-look
 "
 
 UTILS_AUR="
