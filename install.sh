@@ -19,6 +19,7 @@ DEV="
     kitty zsh tmux
     ipython python-pip jupyterlab
     docker docker-compose
+    mingw-w64-gcc
 "
 
 DEV_AUR="
