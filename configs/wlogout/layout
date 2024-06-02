@@ -1,0 +1,24 @@
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "(s)hutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "logout",
+    "action" : "killall Hyprland",
+    "text" : "(e)xit",
+    "keybind" : "e"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "(r)estart",
+    "keybind" : "r"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "(h)ibernate",
+    "keybind" : "h"
+}

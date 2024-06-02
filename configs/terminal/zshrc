@@ -1,0 +1,50 @@
+ZSH=/usr/share/oh-my-zsh/
+ZSH_THEME="robbyrussell"
+plugins=(sudo git rust node npm fzf nmap docker docker-compose terraform aws)
+
+ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+  mkdir $ZSH_CACHE_DIR
+fi
+source $ZSH/oh-my-zsh.sh
+
+path+=("/home/luca/.ghcup/bin")
+path+=("/home/luca/.cargo/bin")
+export PATH
+
+export EDITOR=vim
+export SHELL=zsh
+
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+alias l="exa -lh"
+alias la="exa -lah"
+alias lt="exa -lah --tree"
+alias cat="bat"
+alias cd="z"
+alias mv="mv -v"
+alias cp="cp -v"
+alias rm="trash -v"
+alias mkdir="mkdir -pv"
+alias pacman="sudo pacman"
+alias sshpc="ssh luca@192.168.178.29"
+alias sshpi="ssh pi@192.168.178.33"
+alias lgit="lazygit"
+alias ldocker="lazydocker"
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+eval "$(rtx activate zsh)"
+eval "$(opam env)"
+
+fastfetch
