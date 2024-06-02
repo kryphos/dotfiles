@@ -1,0 +1,8 @@
+[tools]
+bun = "latest"
+go = "latest"
+java = "latest"
+maven = "latest"
+node = "latest"
+python = "latest"
+zig = "latest"
