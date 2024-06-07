@@ -36,4 +36,4 @@ vim.g.neovide_transparency = 0.90
 
 vim.notify = require("notify")
 
-vim.cmd("colorscheme midnight")
+vim.cmd("colorscheme ayu")
