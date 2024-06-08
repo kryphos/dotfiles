@@ -90,7 +90,7 @@ SOFTWARE="
 
 SOFTWARE_AUR="
     spotify spicetify-cli spicetify-themes-git
-    betterdiscord-installer webcord
+    betterdiscord-installer
     onlyoffice-bin blockbench-bin
     sfxr-qt-bin pavucontrol
     logseq-desktop-wayland-bin
