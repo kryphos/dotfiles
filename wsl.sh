@@ -18,7 +18,8 @@ sudo pacman -S --needed --noconfirm git base-devel && \
 
 # install software
 sudo pacman -S --noconfirm man-db man-pages tldr neovim tmux ripgrep gdb clang docker \
-  docker-compose cloc make cmake fd python-pip tar zip unzip zsh mold rustup fzf opam
+  docker-compose cloc make cmake fd python-pip tar zip unzip zsh mold rustup fzf opam \
+  aws-cli terraform
 yay -S oh-my-zsh-git act pfetch codelldb lazydocker lazygit ghcup-hs-bin
 
 # rust

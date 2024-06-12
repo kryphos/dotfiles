@@ -1,6 +1,6 @@
 ZSH=/usr/share/oh-my-zsh/
 ZSH_THEME="robbyrussell"
-plugins=(git rust node fd npm docker docker-compose command-not-found fzf nmap)
+plugins=(git rust node fd npm fzf nmap docker docker-compose terraform aws)
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then

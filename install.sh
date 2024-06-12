@@ -18,7 +18,7 @@ DEV="
     neovim neovide
     kitty zsh tmux fzf
     ipython python-pip opam
-    docker docker-compose
+    docker docker-compose aws-cli terraform
     mingw-w64-gcc
 "
 

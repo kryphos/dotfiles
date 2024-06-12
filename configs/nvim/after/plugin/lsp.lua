@@ -95,6 +95,7 @@ require("mason-lspconfig").setup {
         "rust_analyzer",
         "sqlls",
         "tailwindcss",
+        "terraformls",
         "texlab",
         "tsserver",
         "typos_lsp",
