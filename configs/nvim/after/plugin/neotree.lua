@@ -3,6 +3,23 @@ require("neo-tree").setup({
     close_if_last_window = true,
     popup_border_style = "rounded",
     enable_git_status = true,
+    default_component_configs = {
+        git_status = {
+            symbols = {
+                -- Change type
+                added     = "+",
+                deleted   = "-",
+                modified  = "~",
+                renamed   = "→",
+                -- Status type
+                untracked = "?",
+                ignored   = "i",
+                unstaged  = "u",
+                staged    = "s",
+                conflict  = "!",
+            },
+        },
+    },
     open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
     window = {
         position = "left",
@@ -37,7 +54,7 @@ require("neo-tree").setup({
             visible = false,
             hide_dotfiles = true,
             hide_gitignored = true,
-            always_show = { ".gitignore" }
+            always_show = { ".gitignore", ".env" }
         },
         follow_current_file = true,
         hijack_netrw_behavior = "open_default",

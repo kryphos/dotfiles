@@ -1,0 +1,7 @@
+#!/bin/env bash
+# Update all the things
+
+yay -Syyu
+rustup update
+rtx upgrade
+nvim +PackerSync +MasonUpdate

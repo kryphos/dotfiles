@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 # directly use new pacman confs
 sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf

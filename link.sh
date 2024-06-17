@@ -1,4 +1,4 @@
-#/bin/bash
+#/bin/env bash
 
 mkdir -p ~/.config/BetterDiscord/plugins
 mkdir -p ~/.config/tmux
@@ -20,3 +20,4 @@ sudo ln -sf $(pwd)/configs/grub /etc/default/grub
 sudo ln -sf $(pwd)/configs/blacklist.conf /etc/modprobe.d/blacklist.conf
 sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
 sudo ln -sf $(pwd)/binaries/windows /usr/bin/windows
+sudo ln -sf $(pwd)/binaries/system-update /usr/bin/system-update

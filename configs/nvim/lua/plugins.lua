@@ -48,8 +48,8 @@ return require("packer").startup(function(use)
     use { "alvarosevilla95/luatab.nvim" }
     use {
         "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
-        requires = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim" },
+        branch = "v3.x",
+        requires = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim", "3rd/image.nvim" },
     }
     use { "nvim-pack/nvim-spectre" }
     use { "folke/trouble.nvim" }
@@ -127,9 +127,6 @@ return require("packer").startup(function(use)
     use { "mfussenegger/nvim-dap", "theHamsta/nvim-dap-virtual-text" }
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
     use { "nvim-neotest/nvim-nio" }
-
-    -- Rich Discord presence lol
-    --use { "andweeb/presence.nvim" }
 
     -- Misc
     use { "echasnovski/mini.nvim" }
