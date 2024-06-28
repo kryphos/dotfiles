@@ -17,3 +17,6 @@ disabled = false
 disabled = false
 added_style = 'bold blue'
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[nix_shell]
+symbol = "󰜗 "
