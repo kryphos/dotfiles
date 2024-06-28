@@ -2,6 +2,7 @@
 # Update all the things
 
 yay -Syyu
+nix-channel --update
 rustup update
 rtx upgrade
 nvim +PackerSync +MasonUpdate

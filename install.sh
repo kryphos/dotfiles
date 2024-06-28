@@ -12,6 +12,7 @@ FONTS_AUR="
 "
 
 DEV="
+    nix
     man-db man-pages
     make cmake ninja clang mold gdb rustup raylib
     texlive
