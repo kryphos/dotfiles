@@ -41,7 +41,6 @@ alias pacman="sudo pacman"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(rtx activate zsh)"
-eval "$(thefuck --alias)"
 eval "$(opam env)"
 
-pfetch
+fastfetch

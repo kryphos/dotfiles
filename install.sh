@@ -25,6 +25,7 @@ DEV="
 
 DEV_AUR="
     pfetch
+    fastfetch
     oh-my-zsh-git
     gf2-git codelldb-bin
     act
@@ -33,7 +34,7 @@ DEV_AUR="
 "
 
 UTILS="
-    btop feh fd tk tldr tar zip unzip ripgrep ranger jq ntfs-3g thefuck cloc neofetch mpv
+    btop feh fd tk tldr tar zip unzip ripgrep ranger jq ntfs-3g cloc neofetch mpv
     gparted nemo
     polkit-kde-agent
     xdg-desktop-portal-gtk
@@ -45,7 +46,7 @@ UTILS="
 "
 
 UTILS_AUR="
-    update-grub etcher-bin ani-cli-git
+    update-grub ani-cli-git
     headsetcontrol opentabletdriver
     hyprpicker hyprlock wlogout
     kripton-theme-git
@@ -56,19 +57,19 @@ PRINTER="
 "
 
 GAMING="
-    steam lutris wine gamescope mangohud
+    steam lutris wine gamescope mangohud virt-manager qemu-full ytfzf hexchat
 "
 
 GAMING_AUR="
-    minecraft-launcher path-of-building-community-git
+    minecraft-launcher path-of-building-community-git chatterino2 whatsdesk-git
 "
 
 PTESTING="
-    nmap wireshark-qt aircrack-ng hydra john hashcat
+    nmap wireshark-qt aircrack-ng hydra john hashcat valgrind
 "
 
 PTESTING_AUR="
-    metasploit-git zenmap
+    metasploit-git zenmap armitage-git aseprite
 "
 
 CARGO_PKGS="
@@ -96,6 +97,7 @@ SOFTWARE_AUR="
     sfxr-qt-bin pavucontrol
     logseq-desktop-wayland-bin
     jdownloader2
+    flat-remix-gtk
 "
 
 RTX_LANGS="
