@@ -1,110 +1,173 @@
-#!/bin/env bash
+#!/bin/bash
 
-FONTS="
-    font-manager
-    noto-fonts noto-fonts-extra noto-fonts-emoji
-    ttf-nerd-fonts-symbols powerline-fonts
-    ttf-opensans ttf-fira-code ttf-hanazono ttf-caladea
-"
-
-FONTS_AUR="
-    ttf-ms-fonts terminus-font-ttf
-"
-
-DEV="
-    nix
-    man-db man-pages
-    make cmake ninja clang mold gdb rustup raylib
-    texlive
-    neovim neovide
-    kitty zsh tmux fzf
-    ipython python-pip opam
-    docker docker-compose aws-cli terraform
-    mingw-w64-gcc
-"
-
-DEV_AUR="
-    pfetch
-    fastfetch
-    oh-my-zsh-git
-    gf2-git codelldb-bin
+PACKAGES="
     act
-    lazygit lazydocker-bin
+    aircrack-ng
+    ani-cli-git
+    armitage-git
+    aseprite
+    audacity
+    aws-cli
+    bemenu
+    betterdiscord-installer
+    blender
+    blockbench-bin
+    btop
+    chatterino2
+    clang
+    cloc
+    cmake
+    codelldb-bin
+    copyq
+    cups
+    discord
+    docker
+    docker-compose
+    fastfetch
+    fd
+    feh
+    firefox
+    flameshot
+    flat-remix-gtk
+    font-manager
+    fzf
+    gamescope
+    gdb
+    gf2-git
     ghcup-hs-bin
-"
-
-UTILS="
-    btop feh fd tk tldr tar zip unzip ripgrep ranger jq ntfs-3g cloc neofetch mpv
-    gparted nemo
-    polkit-kde-agent
-    xdg-desktop-portal-gtk
-    pipewire wireplumber
-    waybar hyprpaper bemenu
-    copyq wl-clipboard
-    grim slurp
-    nwg-look
-"
-
-UTILS_AUR="
-    update-grub ani-cli-git
-    headsetcontrol opentabletdriver
-    hyprpicker hyprlock wlogout
+    gparted
+    grim
+    hashcat
+    headsetcontrol
+    hexchat
+    hydra
+    hyprlock
+    hyprpaper
+    hyprpicker
+    inkscape
+    ipython
+    jdownloader2
+    john
+    jq
+    kitty
     kripton-theme-git
-"
-
-PRINTER="
-    sane cups system-config-printer python-pillow
-"
-
-GAMING="
-    steam lutris wine gamescope mangohud virt-manager qemu-full ytfzf hexchat
-"
-
-GAMING_AUR="
-    minecraft-launcher path-of-building-community-git chatterino2 whatsdesk-git
-"
-
-PTESTING="
-    nmap wireshark-qt aircrack-ng hydra john hashcat valgrind
-"
-
-PTESTING_AUR="
-    metasploit-git zenmap armitage-git aseprite
+    krita
+    lazydocker-bin
+    lazygit
+    logseq-desktop-wayland-bin
+    lutris
+    make
+    man-db
+    man-pages
+    mangohud
+    metasploit-git
+    minecraft-launcher
+    mingw-w64-gcc
+    mold
+    mpv
+    nemo
+    neofetch
+    neovide
+    neovim
+    ninja
+    nix
+    nmap
+    noto-fonts
+    noto-fonts-emoji
+    noto-fonts-extra
+    ntfs-3g
+    nwg-look
+    obs-studio
+    oh-my-zsh-git
+    okular
+    onlyoffice-bin
+    opam
+    opentabletdriver
+    path-of-building-community-git
+    pavucontrol
+    peek
+    pfetch
+    pipewire
+    pitivi
+    polkit-kde-agent
+    powerline-fonts
+    python-pillow
+    python-pip
+    qemu-full
+    ranger
+    raylib
+    ripgrep
+    rustup
+    sane
+    sfxr-qt-bin
+    slurp
+    spicetify-cli
+    spicetify-themes-git
+    spotify
+    steam
+    system-config-printer
+    tar
+    terminus-font-ttf
+    terraform
+    texlive
+    thunderbird
+    tk
+    tldr
+    tmux
+    ttf-caladea
+    ttf-fira-code
+    ttf-hanazono
+    ttf-ms-fonts
+    ttf-nerd-fonts-symbols
+    ttf-opensans
+    unzip
+    update-grub
+    valgrind
+    virt-manager
+    waybar
+    whatsdesk-git
+    wine
+    wireplumber
+    wireshark-qt
+    wl-clipboard
+    wlogout
+    xdg-desktop-portal-gtk
+    xournalpp
+    ytfzf
+    zenmap
+    zip
+    zsh
 "
 
 CARGO_PKGS="
-    cargo-binstall rtx-cli bacon zoxide
-"
+    bacon
+    cargo-binstall
+    rtx-cli
+    zoxide
+ "
 
 CARGO_BIN_PKGS="
-    starship exa bat du-dust
-    irust evcxr_repl
-    cargo-watch cargo-info cargo-expand cargo-make
-    cross tmux-sessionizer
-"
-
-SOFTWARE="
-    discord firefox thunderbird okular
-    flameshot peek
-    blender krita inkscape audacity xournalpp
-    obs-studio pitivi
-"
-
-SOFTWARE_AUR="
-    spotify spicetify-cli spicetify-themes-git
-    betterdiscord-installer
-    onlyoffice-bin blockbench-bin
-    sfxr-qt-bin pavucontrol
-    logseq-desktop-wayland-bin
-    jdownloader2
-    flat-remix-gtk
+    bat
+    cargo-expand
+    cargo-info
+    cargo-make
+    cargo-watch
+    cross
+    du-dust
+    evcxr_repl
+    exa
+    irust
+    starship
+    tmux-sessionizer
 "
 
 RTX_LANGS="
-    node@latest bun@latest
-    java@latest maven@latest
-    python@latest
+    bun@latest
     go@latest
+    java@latest
+    maven@latest
+    node@latest
+    python@latest
     zig@latest
 "
 
@@ -119,9 +182,7 @@ sudo pacman -S --needed --noconfirm git base-devel && \
     cd .. && \
     rm -rf yay/
 
-sudo pacman -S $FONTS $DEV $UTILS $PRINTER $GAMING $PTESTING $SOFTWARE
-
-yay -S $FONTS_AUR $DEV_AUR $UTILS_AUR $GAMING_AUR $PTESTING_AUR $SOFTWARE_AUR
+yay -S $PACKAGES
 
 rustup default nightly
 cargo install $CARGO_PKGS -j 8
