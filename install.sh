@@ -243,6 +243,7 @@ ln -sf $(pwd)/configs/wlogout ~/.config/
 sudo ln -sf $(pwd)/configs/blacklist.conf /etc/modprobe.d/blacklist.conf
 sudo ln -sf $(pwd)/configs/grub /etc/default/grub
 sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
+sudo ln -sf $(pwd)/scripts/init-headset /usr/bin/init-headset
 sudo ln -sf $(pwd)/scripts/system-update /usr/bin/system-update
 sudo ln -sf $(pwd)/scripts/windows /usr/bin/windows
 
