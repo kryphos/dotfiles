@@ -162,6 +162,7 @@ PACKAGES="
     tk
     tldr
     tmux
+    trash-cli
     ttf-caladea
     ttf-fira-code
     ttf-hanazono

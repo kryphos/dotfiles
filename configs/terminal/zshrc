@@ -34,7 +34,7 @@ alias cat="bat"
 alias cd="z"
 alias mv="mv -v"
 alias cp="cp -v"
-alias rm="rm -v"
+alias rm="trash -v"
 alias mkdir="mkdir -pv"
 alias pacman="sudo pacman"
 
