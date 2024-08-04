@@ -153,8 +153,8 @@ git config --global credential.helper store
 
 sudo gpasswd -a $USER docker
 
+sudo gpasswd -a $USER nix-users
 sudo usermod -a -G nix-users $USER
-su - $USER
 systemctl enable nix-daemon
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-nix-channel --update
+sudo nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+sudo nix-channel --update

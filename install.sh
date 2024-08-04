@@ -294,11 +294,11 @@ sudo systemctl enable cups
 
 sudo update-grub
 
+sudo gpasswd -a $USER nix-users
 sudo usermod -a -G nix-users $USER
-su - $USER
 systemctl enable nix-daemon
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-nix-channel --update
+sudo nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+sudo nix-channel --update
 
 sudo chmod 777 /opt/spotify
 sudo chmod 777 /opt/spotify/Apps -R
