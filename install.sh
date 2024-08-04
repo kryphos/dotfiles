@@ -176,7 +176,6 @@ RTX_LANGS="
 
 mkdir -p ~/.config/BetterDiscord/plugins
 mkdir -p ~/.config/discord
-mkdir -p ~/.config/fastfetch
 mkdir -p ~/.config/tmux
 rm -rf ~/.config/hypr
 
