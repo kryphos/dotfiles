@@ -1,8 +1,8 @@
 [tools]
-node = "latest"
 bun = "latest"
+go = "latest"
 java = "latest"
 maven = "latest"
-go = "latest"
+node = "latest"
 python = "latest"
 zig = "latest"

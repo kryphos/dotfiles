@@ -4,7 +4,6 @@ PACKAGES="
     act
     aircrack-ng
     ani-cli-git
-    armitage-git
     aseprite
     audacity
     aws-cli
@@ -13,7 +12,7 @@ PACKAGES="
     blender
     blockbench-bin
     btop
-    chatterino2
+    chatterino2-bin
     clang
     cloc
     cmake
@@ -54,6 +53,7 @@ PACKAGES="
     krita
     lazydocker-bin
     lazygit
+    libpqxx
     logseq-desktop-wayland-bin
     lutris
     make
@@ -94,6 +94,7 @@ PACKAGES="
     python-pillow
     python-pip
     qemu-full
+    qutebrowser
     ranger
     raylib
     ripgrep
@@ -171,6 +172,32 @@ RTX_LANGS="
     zig@latest
 "
 
+## LINKING CONFIGS
+
+mkdir -p ~/.config/BetterDiscord/plugins
+mkdir -p ~/.config/discord
+mkdir -p ~/.config/fastfetch
+mkdir -p ~/.config/tmux
+rm -rf ~/.config/hypr
+
+ln -sf $(pwd)/configs/discord_settings.json ~/.config/discord/settings.json
+ln -sf $(pwd)/configs/hypr ~/.config/
+ln -sf $(pwd)/configs/nvim ~/.config/
+ln -sf $(pwd)/configs/terminal/kitty.conf ~/.config/kitty/kitty.conf
+ln -sf $(pwd)/configs/terminal/rtx.toml ~/.rtx.toml
+ln -sf $(pwd)/configs/terminal/starship.toml ~/.config/
+ln -sf $(pwd)/configs/terminal/tmux.conf ~/.config/tmux/tmux.conf
+ln -sf $(pwd)/configs/terminal/zshrc ~/.zshrc
+ln -sf $(pwd)/configs/waybar ~/.config/
+ln -sf $(pwd)/configs/wlogout ~/.config/
+sudo ln -sf $(pwd)/configs/blacklist.conf /etc/modprobe.d/blacklist.conf
+sudo ln -sf $(pwd)/configs/grub /etc/default/grub
+sudo ln -sf $(pwd)/configs/pacman.conf /etc/pacman.conf
+sudo ln -sf $(pwd)/scripts/system-update /usr/bin/system-update
+sudo ln -sf $(pwd)/scripts/windows /usr/bin/windows
+
+## INSTALLING PACKAGES
+
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman -Syyu --noconfirm
@@ -188,7 +215,6 @@ rustup default nightly
 cargo install $CARGO_PKGS -j 8
 cargo binstall $CARGO_BIN_PKGS -y
 
-sudo pacman -R yarn dunst --noconfirm
 ~/.cargo/bin/rtx install $RTX_LANGS -y
 
 opam init
@@ -203,3 +229,24 @@ pip install --upgrade notebook nbclassic
 
 wget "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/af645f597c7e4da51a467d27f56f305edea6cb5e/Plugins/PluginRepo/PluginRepo.plugin.js" -O ~/.config/BetterDiscord/plugins/PluginRepo.plugin.js
 wget "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/af645f597c7e4da51a467d27f56f305edea6cb5e/Plugins/ThemeRepo/ThemeRepo.plugin.js" -O ~/.config/BetterDiscord/plugins/ThemeRepo.plugin.js
+
+## FURTHER CONFIG
+
+git config --global credential.helper store
+
+sudo gpasswd -a $USER docker
+
+sudo systemctl enable cups
+
+sudo update-grub
+
+sudo usermod -a -G nix-users $USER
+systemctl enable nix-daemon
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
+
+sudo chmod 777 /opt/spotify
+sudo chmod 777 /opt/spotify/Apps -R
+#/bin/spicetify config current_theme Sleek
+#/bin/spicetify config color_scheme UltraBlack
+#/bin/spicetify backup apply

@@ -11,11 +11,9 @@ git clone https://github.com/kryphos/dotfiles.git ~/.dotfiles
 
 Run
 ```bash
-./link.sh
 ./install.sh
-./config.sh
 ```
-in that order to setup the system.
+to setup the system.
 
 Run
 ```bash

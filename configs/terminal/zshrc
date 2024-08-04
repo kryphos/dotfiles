@@ -43,4 +43,4 @@ eval "$(zoxide init zsh)"
 eval "$(rtx activate zsh)"
 eval "$(opam env)"
 
-fastfetch
+pfetch
