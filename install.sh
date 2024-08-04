@@ -133,6 +133,7 @@ PACKAGES="
     wl-clipboard
     wlogout
     xdg-desktop-portal-gtk
+    xorg-xhost
     xournalpp
     ytfzf
     zenmap
@@ -232,6 +233,8 @@ wget "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/af645f597c
 ## FURTHER CONFIG
 
 git config --global credential.helper store
+
+xhost +SI:localuser:root
 
 sudo gpasswd -a $USER docker
 
