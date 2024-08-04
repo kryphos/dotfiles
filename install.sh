@@ -135,7 +135,6 @@ PACKAGES="
     xdg-desktop-portal-gtk
     xorg-xhost
     xournalpp
-    ytfzf
     zenmap
     zip
     zsh
