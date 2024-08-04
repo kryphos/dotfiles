@@ -31,6 +31,7 @@ PACKAGES="
     flat-remix-gtk
     font-manager
     fzf
+    gamemode
     gamescope
     gdb
     gf2-git
