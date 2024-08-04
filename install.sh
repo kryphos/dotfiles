@@ -3,6 +3,8 @@
 PACKAGES="
     act
     aircrack-ng
+    alsa-lib
+    alsa-plugins
     ani-cli-git
     aseprite
     audacity
@@ -12,7 +14,6 @@ PACKAGES="
     blender
     blockbench-bin
     btop
-    chatterino2-bin
     clang
     cloc
     cmake
@@ -34,8 +35,12 @@ PACKAGES="
     gdb
     gf2-git
     ghcup-hs-bin
+    giflib
+    gnutls
     gparted
     grim
+    gst-plugins-base-libs
+    gtk3
     hashcat
     headsetcontrol
     hexchat
@@ -53,7 +58,43 @@ PACKAGES="
     krita
     lazydocker-bin
     lazygit
+    lib32-alsa-lib
+    lib32-alsa-plugins
+    lib32-giflib
+    lib32-gnutls
+    lib32-gst-plugins-base-libs
+    lib32-gtk3
+    lib32-libgcrypt
+    lib32-libgpg-error
+    lib32-libjpeg-turbo
+    lib32-libldap
+    lib32-libpng
+    lib32-libpulse
+    lib32-libva
+    lib32-libxcomposite
+    lib32-libxinerama
+    lib32-libxslt
+    lib32-mesa
+    lib32-mpg123
+    lib32-ncurses
+    lib32-openal
+    lib32-opencl-icd-loader
+    lib32-sqlite
+    lib32-v4l-utils
+    lib32-vulkan-icd-loader
+    lib32-vulkan-icd-loader
+    lib32-vulkan-radeon
+    libgcrypt
+    libgpg-error
+    libjpeg-turbo
+    libldap
+    libpng
     libpqxx
+    libpulse
+    libva
+    libxcomposite
+    libxinerama
+    libxslt
     logseq-desktop-wayland-bin
     lutris
     make
@@ -64,7 +105,9 @@ PACKAGES="
     minecraft-launcher
     mingw-w64-gcc
     mold
+    mpg123
     mpv
+    ncurses
     nemo
     neofetch
     neovide
@@ -82,6 +125,8 @@ PACKAGES="
     okular
     onlyoffice-bin
     opam
+    openal
+    opencl-icd-loader
     opentabletdriver
     path-of-building-community-git
     pavucontrol
@@ -105,6 +150,7 @@ PACKAGES="
     spicetify-cli
     spicetify-themes-git
     spotify
+    sqlite
     steam
     system-config-printer
     tar
@@ -123,11 +169,15 @@ PACKAGES="
     ttf-opensans
     unzip
     update-grub
+    v4l-utils
     valgrind
     virt-manager
+    vulkan-icd-loader
+    vulkan-icd-loader
+    vulkan-radeon
     waybar
     whatsdesk-git
-    wine
+    wine-staging
     wireplumber
     wireshark-qt
     wl-clipboard
