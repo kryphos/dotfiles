@@ -26,6 +26,14 @@
         ],
         "tooltip": true
     },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": [
+            "",
+            ""
+        ]
+    },
     "pulseaudio": {
         "scroll-step": 5,
         "format": "{icon} {volume}%",

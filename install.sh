@@ -3,8 +3,6 @@
 PACKAGES="
     act
     aircrack-ng
-    alsa-lib
-    alsa-plugins
     ani-cli-git
     aseprite
     audacity
@@ -13,6 +11,7 @@ PACKAGES="
     betterdiscord-installer
     blender
     blockbench-bin
+    brightnessctl
     btop
     clang
     cloc

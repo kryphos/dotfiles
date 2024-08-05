@@ -12,7 +12,6 @@
         "modules-center": [],
         "modules-right": [
             "cpu",
-            "temperature",
             "memory",
             "pulseaudio",
             "clock"
@@ -52,13 +51,14 @@
         ],
         "modules-center": [],
         "modules-right": [
+            "tray",
             "cpu",
-            "temperature",
             "memory",
-            "battery",
+            "temperature",
             "pulseaudio",
-            "clock",
-            "tray"
+            "backlight",
+            "battery",
+            "clock"
         ],
         "include": [
             "~/.config/waybar/modules.jsonc"
