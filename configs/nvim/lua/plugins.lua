@@ -169,7 +169,7 @@ return require("packer").startup(function(use)
     use { "nicwest/vim-camelsnek" }
     use { "scrooloose/nerdcommenter" }
     use { "sindrets/winshift.nvim" }
-    use { "soulis-1256/eagle.nvim" }
+    --use { "soulis-1256/eagle.nvim" }
     use { "stevearc/dressing.nvim" }
     use { "tpope/vim-repeat" }
     use { "windwp/nvim-autopairs" }

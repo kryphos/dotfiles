@@ -77,17 +77,17 @@ require("ts-error-translator").setup()
 
 require("git-conflict").setup()
 
-require("symbol-usage").setup({
-    kinds = {
-        SymbolKind.Class,
-        SymbolKind.Constructor,
-        SymbolKind.Enum,
-        SymbolKind.Function,
-        SymbolKind.Interface,
-        SymbolKind.Method,
-        SymbolKind.Struct
-    },
-})
+--require("symbol-usage").setup({
+    --kinds = {
+        --SymbolKind.Class,
+        --SymbolKind.Constructor,
+        --SymbolKind.Enum,
+        --SymbolKind.Function,
+        --SymbolKind.Interface,
+        --SymbolKind.Method,
+        --SymbolKind.Struct
+    --},
+--})
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking text",
