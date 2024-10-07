@@ -6,7 +6,7 @@ require("crates").setup()
 
 require("dressing").setup()
 
-require("eagle").setup()
+--require("eagle").setup()
 
 require("early-retirement").setup({ retirementAgeMins = 3, })
 
