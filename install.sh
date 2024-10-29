@@ -167,7 +167,7 @@ PACKAGES="
     terminus-font-ttf
     terraform
     texlive
-    texlive-langeuropean
+    texlive-lang
     thunderbird
     tk
     tldr
