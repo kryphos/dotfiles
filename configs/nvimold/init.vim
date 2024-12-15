@@ -1,4 +1,6 @@
-lua require("init")
+lua require("plugins")
+lua require("keymap")
+lua require("set")
 
 " Copilot suggestion color
 highlight CopilotSuggestion guifg=#910367 ctermfg=8
