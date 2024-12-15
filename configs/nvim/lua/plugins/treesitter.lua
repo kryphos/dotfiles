@@ -37,7 +37,7 @@ return {
                     "vimdoc",
                     "yaml",
                 },
-                sync_install = true,
+                sync_install = false,
                 auto_install = true,
 
                 highlight = {
