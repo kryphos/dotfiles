@@ -33,6 +33,10 @@ local installed_formatters = {
     "prettierd",
     "black",
     "isort",
+    "latexindent",
+    "bibtex-tidy",
+
+    "tree-sitter-cli",
 }
 
 local lsps_with_custom_setup = {
@@ -153,6 +157,8 @@ return {
                     html = { "prettierd" },
                     css = { "prettierd" },
                     scss = { "prettierd" },
+                    latex = { "latexindent" },
+                    bib = { "bibtex-tidy" },
                 },
                 format_on_save = {
                     timeout_ms = 500,

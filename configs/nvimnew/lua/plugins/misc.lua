@@ -47,6 +47,10 @@ return {
                     add = "ea",
                     delete = "ed",
                     replace = "er",
+                    find = "ef",
+                    find_left = "eF",
+                    highlight = "eh",
+                    update_n_lines = "en",
                 }
             })
         end
@@ -80,19 +84,22 @@ return {
         end
     },
 
-    { "laytan/cloak.nvim", config=function ()
-require("cloak").setup({
-    enabled = true,
-    cloak_character = "#",
-    highlight_group = "Comment",
-    patterns = {
-        {
-            file_pattern = {
-                ".env*",
-            },
-            cloak_pattern = "=.+"
-        },
+    {
+        "laytan/cloak.nvim",
+        config = function()
+            require("cloak").setup({
+                enabled = true,
+                cloak_character = "#",
+                highlight_group = "Comment",
+                patterns = {
+                    {
+                        file_pattern = {
+                            ".env*",
+                        },
+                        cloak_pattern = "=.+"
+                    },
+                },
+            })
+        end
     },
-})
-    end },
 }

@@ -38,7 +38,12 @@ return {
         end
     },
 
-    { "j-hui/fidget.nvim" },
+    {
+        "j-hui/fidget.nvim",
+        config = function()
+            require("fidget").setup()
+        end
+    },
 
     {
         "lewis6991/gitsigns.nvim",
@@ -57,10 +62,10 @@ return {
 
     { "RRethy/vim-illuminate" },
 
-{
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-},
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+    },
 
     {
         "stevearc/dressing.nvim",
