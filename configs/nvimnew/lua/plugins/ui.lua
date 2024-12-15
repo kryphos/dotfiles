@@ -68,6 +68,20 @@ return {
     },
 
     {
+        "NvChad/nvim-colorizer.lua",
+        config = function()
+            require("colorizer").setup({
+                user_default_options = {
+                    mode = "virtualtext",
+                    virtualtext_inline = true,
+                    tailwind = true,
+                    always_update = true,
+                },
+            })
+        end
+    },
+
+    {
         "stevearc/dressing.nvim",
         config = function()
             require("dressing").setup()

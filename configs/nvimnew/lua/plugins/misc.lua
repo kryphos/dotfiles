@@ -64,13 +64,6 @@ return {
     },
 
     {
-        "NvChad/nvim-colorizer.lua",
-        config = function()
-            require("colorizer").setup()
-        end
-    },
-
-    {
         "chrisgrieser/nvim-early-retirement",
         config = function()
             require("early-retirement").setup({ retirementAgeMins = 3, })

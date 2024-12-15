@@ -34,7 +34,6 @@ return {
                 "hrsh7th/cmp-calc",
             },
 
-            { "roobert/tailwindcss-colorizer-cmp.nvim" },
             { "onsails/lspkind.nvim" },
         },
         config = function()
@@ -82,10 +81,6 @@ return {
                         return vim_item
                     end,
                 },
-            })
-
-            require("tailwindcss-colorizer-cmp").setup({
-                color_square_width = 2,
             })
         end,
     },
