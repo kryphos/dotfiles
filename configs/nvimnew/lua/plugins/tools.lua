@@ -20,4 +20,19 @@ return {
             require('spectre').setup()
         end
     },
+
+
+    {
+        "folke/trouble.nvim",
+        config = function()
+            require("trouble").setup({ padding = false, })
+        end
+    },
+
+    {
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end
+    },
 }

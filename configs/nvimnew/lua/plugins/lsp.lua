@@ -71,12 +71,14 @@ return {
         "neovim/nvim-lspconfig",
         dependencies = {
             { "lervag/vimtex" },
+
             {
                 "saecki/crates.nvim",
                 config = function()
                     require("crates").setup()
                 end
             },
+
             {
                 "lvimuser/lsp-inlayhints.nvim",
                 config = function()
@@ -87,6 +89,7 @@ return {
                     require("lsp-inlayhints").setup()
                 end
             },
+
             {
                 "ray-x/lsp_signature.nvim",
                 opts = {
@@ -97,6 +100,7 @@ return {
                 },
                 config = function(_, opts) require("lsp_signature").setup(opts) end
             },
+
             {
                 "folke/lazydev.nvim",
                 ft = "lua",
@@ -106,12 +110,14 @@ return {
                     },
                 },
             },
+
             {
                 "dmmulroy/ts-error-translator.nvim",
                 config = function()
                     require("ts-error-translator").setup()
                 end
             },
+
             {
                 "ivanjermakov/troublesum.nvim",
                 config = function()

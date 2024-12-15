@@ -41,8 +41,8 @@ vim.keymap.set("n", "<leader>e", ":Neotree toggle left<CR>")
 vim.keymap.set("n", "<leader>g", ":G<CR>")
 vim.keymap.set("n", "<leader>s", "<cmd>lua require('spectre').toggle()<CR>", {})
 vim.keymap.set("n", "<leader>sw", "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", {})
---vim.keymap.set("n", "<leader>t", ":Trouble diagnostics<CR>")
---vim.keymap.set("n", "<leader>o", ":Oil . --float <CR>")
+vim.keymap.set("n", "<leader>t", ":Trouble diagnostics<CR>")
+vim.keymap.set("n", "<leader>o", ":Oil . --float <CR>")
 
 -- harpoon
 local harpoon = require("harpoon")
