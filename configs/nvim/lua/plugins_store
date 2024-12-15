@@ -1,0 +1,40 @@
+    -- Ui tools
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        requires = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim", "3rd/image.nvim" },
+    }
+    use { "folke/trouble.nvim" }
+    use { "ziontee113/icon-picker.nvim" }
+    use { "stevearc/oil.nvim" }
+    use { "Wansmer/symbol-usage.nvim" }
+    use { "LintaoAmons/scratch.nvim" }
+
+    -- Git
+    use { "sindrets/diffview.nvim" }
+    use { "akinsho/git-conflict.nvim" }
+
+    -- Treesitter
+    use { "nvim-treesitter/nvim-treesitter-context" }
+
+    -- Misc
+    use { "NvChad/nvim-colorizer.lua" }
+    use { "TheZoq2/neovim-auto-autoread" }
+    use { "chrisgrieser/nvim-early-retirement" }
+    use { "echasnovski/mini.nvim" }
+    use { "folke/todo-comments.nvim" }
+    use { "ggandor/leap.nvim" }
+    use { "junegunn/vim-easy-align" }
+    use { "klen/nvim-test" }
+    use { "laytan/cloak.nvim" }
+    use { "lukas-reineke/indent-blankline.nvim" }
+    use { "matze/vim-move" }
+    use { "nacro90/numb.nvim" }
+    use { "nicwest/vim-camelsnek" }
+    use { "scrooloose/nerdcommenter" }
+    use { "sindrets/winshift.nvim" }
+    use { "tpope/vim-repeat" }
+    use { "windwp/nvim-ts-autotag" }
+    use { "yorickpeterse/nvim-pqf" }
+    use { "zeioth/garbage-day.nvim" }
+end)

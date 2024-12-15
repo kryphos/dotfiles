@@ -1,5 +1,5 @@
 add_newline = false
-command_timeout = 5000
+command_timeout = 3000
 
 [container]
 disabled = true
@@ -22,4 +22,4 @@ format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 symbol = "󰜗 "
 
 [aws]
-disabled = true
+disabled = false

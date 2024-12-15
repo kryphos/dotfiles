@@ -27,20 +27,20 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-alias l="exa -lh"
-alias la="exa -lah"
-alias lt="exa -lah --tree"
 alias cat="bat"
 alias cd="z"
-alias mv="mv -v"
 alias cp="cp -v"
-alias rm="trash -v"
+alias l="exa -lh"
+alias la="exa -lah"
+alias ldocker="lazydocker"
+alias lgit="lazygit"
+alias lt="exa -lah --tree"
 alias mkdir="mkdir -pv"
+alias mv="mv -v"
 alias pacman="sudo pacman"
+alias rm="trash -v"
 alias sshpc="ssh luca@192.168.178.29"
 alias sshpi="ssh pi@192.168.178.33"
-alias lgit="lazygit"
-alias ldocker="lazydocker"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"

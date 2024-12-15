@@ -24,7 +24,6 @@ PACKAGES="
     copyq
     cups
     discord
-    dnsmasq
     docker
     docker-compose
     entr
@@ -45,7 +44,6 @@ PACKAGES="
     gnutls
     gparted
     grim
-    gst-plugins-base-libs
     gtk3
     handlr-regex
     hashcat
@@ -54,9 +52,7 @@ PACKAGES="
     hyprlock
     hyprpaper
     hyprpicker
-    inkscape
     ipython
-    jdownloader2
     john
     jq
     jupyterlab
@@ -120,7 +116,6 @@ PACKAGES="
     ncurses
     nemo
     neofetch
-    neovide
     neovim
     ninja
     nix
@@ -187,7 +182,6 @@ PACKAGES="
     vulkan-icd-loader
     vulkan-radeon
     waybar
-    webcord-git
     whatsdesk-git
     wine-staging
     wireplumber
@@ -337,6 +331,7 @@ git config --global credential.helper store
 sudo gpasswd -a $USER docker
 
 sudo systemctl enable cups
+sudo systemctl enable sshd
 
 sudo chmod 777 /opt/spotify
 sudo chmod 777 /opt/spotify/Apps -R

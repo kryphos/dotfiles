@@ -1,17 +1,17 @@
 * {
-  font-family: "Terminus (TTF)", "Symbols Nerd Font", sans-serif;
-  font-size: 14px;
-  background:  black;
-  color: white;
-  border: none;
+    font-family: "Terminus (TTF)", "Symbols Nerd Font", sans-serif;
+    font-size: 14px;
+    background: black;
+    color: white;
+    border: none;
 }
 
 #workspaces button {
-  padding: 0;
+    padding: 0;
 }
 
 #workspaces button.active {
-  border-bottom: 2px solid #BC2421;
+    border-bottom: 2px solid #BC2421;
 }
 
 #tray {
