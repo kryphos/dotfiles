@@ -31,19 +31,12 @@ return {
 
     { "romgrk/barbar.nvim" },
 
-    {
-        "rcarriga/nvim-notify",
-        config = function()
-            vim.notify = require("notify")
-        end
-    },
-
-    {
-        "j-hui/fidget.nvim",
-        config = function()
-            require("fidget").setup()
-        end
-    },
+    --{
+    --"j-hui/fidget.nvim",
+    --config = function()
+    --require("fidget").setup({})
+    --end
+    --},
 
     {
         "lewis6991/gitsigns.nvim",
@@ -128,6 +121,28 @@ return {
         "stevearc/dressing.nvim",
         config = function()
             require("dressing").setup()
+        end
+    },
+
+    {
+        "folke/snacks.nvim",
+        opts = {
+            bigfile = { enabled = true },
+            notifier = { enabled = true },
+            input = { enabled = true },
+        },
+    },
+
+    {
+        "folke/noice.nvim",
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+        },
+        config = function()
+            require("noice").setup({
+                messages = { enabled = false },
+                notify = { enabled = false },
+            })
         end
     },
 
