@@ -153,10 +153,10 @@ return {
             require("conform").setup({
                 formatters_by_ft = {
                     python = { "isort", "black" },
-                    javascript = { "prettierd" },
-                    html = { "prettierd" },
-                    css = { "prettierd" },
-                    scss = { "prettierd" },
+                    javascript = { "prettier" },
+                    html = { "prettier" },
+                    css = { "prettier" },
+                    scss = { "prettier" },
                     latex = { "latexindent" },
                     bib = { "bibtex-tidy" },
                 },

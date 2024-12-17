@@ -58,6 +58,9 @@ return {
                         side_padding = 1,
                     },
                 },
+                performance = {
+                    debounce = 200,
+                },
                 formatting = {
                     fields = { "kind", "abbr", "menu" },
                     format = function(entry, vim_item)

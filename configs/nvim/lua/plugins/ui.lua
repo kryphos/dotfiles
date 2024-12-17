@@ -137,6 +137,13 @@ return {
         dependencies = {
             "MunifTanjim/nui.nvim",
             "3rd/image.nvim",
+            {
+                "s1n7ax/nvim-window-picker",
+                version = "2.*",
+                config = function()
+                    require("window-picker").setup()
+                end,
+            }
         },
         config = function()
             vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
