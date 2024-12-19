@@ -31,13 +31,6 @@ return {
 
     { "romgrk/barbar.nvim" },
 
-    --{
-    --"j-hui/fidget.nvim",
-    --config = function()
-    --require("fidget").setup({})
-    --end
-    --},
-
     {
         "lewis6991/gitsigns.nvim",
         config = function()
