@@ -1,8 +1,8 @@
 -- ctrl + s for saving
-vim.keymap.set("n", "<C-s>", ":w<CR>")
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
 
 -- m for running the compile command
-vim.keymap.set("n", "m", ":belowright Compile<CR>")
+vim.keymap.set("n", "m", "<cmd>belowright Compile<CR>")
 
 -- esc for leaving insert mode in terminal
 vim.keymap.set("t", "<C-e>", [[<C-\><C-n>]])
@@ -14,35 +14,35 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- quickfix/trouble list navigation
-vim.keymap.set("n", "<C-n>", ":cnext<CR>")
-vim.keymap.set("n", "<C-S-n>", ":cprev<CR>")
-vim.keymap.set("n", "<C-t>", ":lua require('trouble').next({ skip_groups = true, jump = true })<CR>")
-vim.keymap.set("n", "<C-S-t>", ":lua require('trouble').prev({ skip_groups = true, jump = true })<CR>")
+vim.keymap.set("n", "<C-n>", "<cmd>cnext<CR>")
+vim.keymap.set("n", "<C-S-n>", "<cmd>cprev<CR>")
+vim.keymap.set("n", "<C-t>", "<cmd>lua require('trouble').next({ skip_groups = true, jump = true })<CR>")
+vim.keymap.set("n", "<C-S-t>", "<cmd>lua require('trouble').prev({ skip_groups = true, jump = true })<CR>")
 
 -- tab navigation + terminal
-vim.keymap.set("n", "<M-t>", ":terminal <CR>")
-vim.keymap.set("n", "<M-x>", ":tabclose <CR>")
-vim.keymap.set("n", "<M-c>", ":tabnew <CR>")
-vim.keymap.set("n", "<M-1>", ":tabn 1<CR>")
-vim.keymap.set("n", "<M-2>", ":tabn 2<CR>")
-vim.keymap.set("n", "<M-3>", ":tabn 3<CR>")
-vim.keymap.set("n", "<M-4>", ":tabn 4<CR>")
-vim.keymap.set("n", "<M-5>", ":tabn 5<CR>")
+vim.keymap.set("n", "<M-t>", "<cmd>terminal <CR>")
+vim.keymap.set("n", "<M-x>", "<cmd>tabclose <CR>")
+vim.keymap.set("n", "<M-c>", "<cmd>tabnew <CR>")
+vim.keymap.set("n", "<M-1>", "<cmd>tabn 1<CR>")
+vim.keymap.set("n", "<M-2>", "<cmd>tabn 2<CR>")
+vim.keymap.set("n", "<M-3>", "<cmd>tabn 3<CR>")
+vim.keymap.set("n", "<M-4>", "<cmd>tabn 4<CR>")
+vim.keymap.set("n", "<M-5>", "<cmd>tabn 5<CR>")
 
 -- resize splits
 vim.keymap.set("n", "<C-h>", require("smart-splits").resize_left)
 vim.keymap.set("n", "<C-j>", require("smart-splits").resize_down)
 vim.keymap.set("n", "<C-k>", require("smart-splits").resize_up)
 vim.keymap.set("n", "<C-l>", require("smart-splits").resize_right)
-vim.keymap.set("n", "<leader>w", ":WinShift<CR>")
+vim.keymap.set("n", "<leader>w", "<cmd>WinShift<CR>")
 
 -- popouts
-vim.keymap.set("n", "<leader>e", ":Neotree toggle left<CR>")
-vim.keymap.set("n", "<leader>g", ":G<CR>")
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle left<CR>")
+vim.keymap.set("n", "<leader>g", "<cmd>G<CR>")
 vim.keymap.set("n", "<leader>s", "<cmd>lua require('spectre').toggle()<CR>", {})
 vim.keymap.set("n", "<leader>sw", "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", {})
-vim.keymap.set("n", "<leader>t", ":Trouble diagnostics<CR>")
-vim.keymap.set("n", "<leader>o", ":Oil . --float <CR>")
+vim.keymap.set("n", "<leader>t", "<cmd>Trouble diagnostics<CR>")
+vim.keymap.set("n", "<leader>o", "<cmd>Oil . --float <CR>")
 
 -- harpoon
 local harpoon = require("harpoon")
